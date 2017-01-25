@@ -4,4 +4,3 @@ cache: yarn
 node_js:
     - '7.0'
     - '6.0'
-after_script: npm run post-test

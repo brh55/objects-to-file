@@ -3,6 +3,8 @@ import path from 'path';
 import test from 'ava';
 import objectsToFile from './index';
 
+fs.mkdirSync('./output');
+
 const data = [
 	{
 		name: 'Henry',

@@ -4,8 +4,7 @@
   "description": "Write out an array of objects to a file",
   "main": "index.js",
   "scripts": {
-    "test": "ava -v",
-    "post-test": "rm -rf output"
+    "test": "ava -v && rm -rf output"
   },
   "repository": {
     "type": "git",

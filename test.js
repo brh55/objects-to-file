@@ -42,9 +42,9 @@ test('Error for no path', async t => {
 	t.is(error.message, 'data is not an array');
 });
 
-test('Error for less count than data available', async t => {
-	const error = await t.throws(objectsToFile('./output/test.csv'));
-	t.is(error.message, 'data is not an array');
+test('Error for count greater than data available', async t => {
+	const error = await t.throws(objectsToFile(data, './output/test.csv', { count: 4 }));
+	t.is(error.message, 'count is greater than available data inputted.');;
 });
 
 test('Test for options', async t => {

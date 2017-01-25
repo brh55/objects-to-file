@@ -11,7 +11,7 @@ module.exports = (data, outputPath, options) =>
 		const opts = options || {};
 
 		if (opts.count > data.length) {
-			reject('count is less than length');
+			reject(Error('count is greater than available data inputted.'));
 		}
 		const count = opts.count || data.length - 1;
 		const delimiter = opts.delimiter || ',';

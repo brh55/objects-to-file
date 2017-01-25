@@ -4,6 +4,8 @@ import test from 'ava';
 import ProgressBar from 'progress';
 import objectsToFile from './index';
 
+fs.mkdirSync('./output');
+
 const data = [
 	{
 		name: 'Henry',

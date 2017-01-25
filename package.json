@@ -1,6 +1,6 @@
 {
   "name": "objects-to-file",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create a delimited value, output file from an array of objects",
   "main": "index.js",
   "scripts": {

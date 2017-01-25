@@ -1,9 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import test from 'ava';
+import ProgressBar from 'progress';
 import objectsToFile from './index';
-
-fs.mkdirSync('./output');
 
 const data = [
 	{
@@ -64,6 +63,23 @@ test('Test for options', async t => {
 
 	t.true(contents.indexOf('|') > 0, 'Replaces the default delimiter');
 	t.false(contents.indexOf(',') === 0, 'Does not contain the default delimiter');
+});
+
+test('Test progress bar tick', t => {
+	let bar = new ProgressBar('Writing data [:bar] :percent :etas', {
+		complete: '|',
+		incomplete: '.',
+		width: 35,
+		total: data.length
+	});
+
+	t.is(bar.curr, 0, 'Progress bar is at a 0 start')
+
+	const opts = { bar };
+	objectsToFile(data, './output/test-bar.txt', opts)
+	.then(() => {
+		t.is(bar.curr, 3, 'Progress bar ticked three times');
+	});
 });
 
 test('Test for raw output', async  t => {

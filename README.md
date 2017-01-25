@@ -70,10 +70,13 @@ The output file location
 A list of keys to map and dictate the order of the value output. Any non-existent fields will be omitted.
 
 ##### options.header | [`<bool>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
-Set `true` to print the key on the first line of the file. `Note: this will not work with options.raw = true`
+Set `true` to print the key on the first chunk of the file. `Note: this will not work with options.raw = true`
 
 ##### options.count | [`<int>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
 Number of desired objects to be written.
+
+##### options.bar | [`<object>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Normal_objects_and_functions)
+Assign a progress bar instance to be `bar.tick()` per each chunk written.
 
 ##### options.delimiter | [`<string>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 The delimiter to be used to seperate values. `Default: ","`

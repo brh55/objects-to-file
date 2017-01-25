@@ -1,6 +1,6 @@
 # objects-to-file [![Travis](https://img.shields.io/travis/brh55/objects-to-file.svg?style=flat-square)](https://travis-ci.org/brh55/objects-to-file) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)
 
-> Simple node writer module to output a file from an array of objects with best effort key mapping
+> A simple node writer module to output a file from an array of objects 
 >
 > **objectsToFile([{}, {}, {}]) => :page_facing_up:**
 
@@ -57,7 +57,7 @@ Promise
 ### objectsToFile(data, outputPath[, options])
 Creates a file based on an array of objects. Unless specified, it will use the first object as a mapping for subsequent objects.
 
-*Returns {Promise}, when resolved returns the file location path*
+*Returns a {Promise}, when resolved returns the file location path*
 
 #### **data** | [`<array>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Indexed_collections_Arrays_and_typed_Arrays)
 The input array of objects.

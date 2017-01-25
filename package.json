@@ -1,10 +1,13 @@
 {
   "name": "objects-to-file",
-  "version": "1.0.0",
-  "description": "Write out an array of objects to a file",
+  "version": "1.0.1",
+  "description": "Create a delimited value, output file from an array of objects",
   "main": "index.js",
   "scripts": {
     "test": "ava -v && rm -rf output"
+  },
+  "engines": {
+    "node": ">=5"
   },
   "repository": {
     "type": "git",

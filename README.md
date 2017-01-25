@@ -1,6 +1,6 @@
 # objects-to-file [![Travis](https://img.shields.io/travis/brh55/objects-to-file.svg?style=flat-square)](https://travis-ci.org/brh55/objects-to-file) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)
 
-> A simple node writer module to output a file from an array of objects 
+> Create a delimited value, output file from an array of objects
 >
 > **objectsToFile([{}, {}, {}]) => :page_facing_up:**
 

@@ -1,0 +1,36 @@
+{
+  "name": "objects-to-file",
+  "version": "1.0.0",
+  "description": "Write out an array of objects to a file",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava -v",
+    "post-test": "rm -rf output"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brh55/objects-to-file.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "io",
+    "writer",
+    "file",
+    "output",
+    "csv",
+    "objects",
+    "convert"
+  ],
+  "author": "Brandon Him",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brh55/objects-to-file/issues"
+  },
+  "homepage": "https://github.com/brh55/objects-to-file#readme",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "xo": "^0.17.1"
+  }
+}

@@ -94,7 +94,7 @@ Set `true` to print all the values within the objects, ignoring keys or first ob
 The encoding to be used for the output file. `Default: "utf8"`
 
 ## Related
-:repeat: [file-line-parse](https://github.com/brh55/file-line-parse) - Parse a file, line by line, to an array of objects.
+:repeat: [file-to-objects](https://github.com/brh55/file-to-objects) - Parse a file, line by line, to an array of objects.
 
 ## License
 MIT
